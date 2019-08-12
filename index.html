@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>현지인 1등 맛집! 전주현대옥</title>
+    <link rel="shortcut icon" href="img/common/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/common/favicon_ios.png">
+    <link rel="icon" sizes="192x192" type="text/css" href="img/common/favicon_and.png">
+    <link rel="stylesheet" href="css/ui.totop.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/colorbox.css">
+    
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/jquery.ui.totop.min.js"></script>
+    <script src="js/easing.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="js/mobile.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/popup.js"></script>
+</head>
+<body>
+    <div class="popup">
+			<div class="pTop">
+			    <div class="pLeft">
+					<h2>NOTICE</h2>
+					<p>
+						본 사이트는 상업적 목적이 아닌 <span class="strong">개인 포트폴리오 용도</span>로 만들어 졌습니다.<br />
+						홈페이지의 일부 내용과 이미지 등은 그 <span class="strong">출처가 따로 있음</span>을 밝힙니다.<br />
+						본 사이트는 <span class="strong">HTML5</span>와 <span class="strong">CSS3</span>를 기준으로 하여 크롬, 사파리, 오페라, 파이어폭스,<br />
+						IE9이상의 브라우저에 맞춘 홈페이지입니다.
+					</p>
+				</div>
+				<div class="pRight">
+					<h2>MOBILE</h2>
+					<p>
+						오른쪽 QR코드를 스캔해주세요.<br />
+						현대옥 모바일 페이지로 이동합니다.
+					</p>
+					<figure class="qrCode">
+						<img src="img/main/myQRcord.jpg" alt="전주현대옥 모바일 큐알코드" title="모바일에서 QR코드를 이용하여 모바일웹 버전으로 접속해주세요"/>
+						<figcaption>모바일 현대옥 QR코드</figcaption>
+					</figure>
+				</div>
+			</div>
+			<div class="pBottom">
+				<form action="#">
+					<fieldset>
+						<legend>오늘 하루 보지않기 폼</legend>
+						<input type="checkbox" id="chkBox">
+						<label for="chkBox">오늘 하루 보이지 않기</label>
+						<a href="#closepop" title="팝업창 닫기">[CLOSE]</a>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+    <aside class="quick">
+        <div class="bean">
+           <img src="img/main/bean_sprouts.png" alt="bean">
+        </div>
+        <ul>
+            <li><a href="aside/login.html" class="loginopen">로그인</a></li>
+            <li><a href="aside/join.html" class="joinopen">회원가입</a></li>
+            <li><a href="http://picdeer.com/tag/%EC%A0%84%EC%A3%BC%EC%BD%A9%EB%82%98%EB%AC%BC%EA%B5%AD%EB%B0%A5%EC%A7%91">인스타그램</a></li>
+            <li><a href="https://www.facebook.com/%ED%98%84%EB%8C%80%EC%98%A5%ED%94%84%EB%9E%9C%EC%B0%A8%EC%9D%B4%EC%A6%88-193767363985733">페이스북</a></li>
+            
+        </ul>
+    </aside>
+    
+    <header> 
+        <h1><a href="index.html"><img src="img/common/hyundaiok_logo_final_height.png" alt="현대옥 로고"></a></h1>
+        <nav class="gnb">
+            <ul>
+                <li><a href="brand/intro.html" class="mainnav">현대옥소개</a>
+                    <ul class="subnav">
+                        <li><a href="brand/intro.html">브랜드소개</a></li>
+                        <li><a href="brand/history.html">연혁</a></li>
+                        <li><a href="brand/identity.html">CI/BI</a></li>
+                        <li><a href="brand/map.html">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li><a href="menu/menu.html" class="mainnav">메뉴안내</a>
+                    <ul class="subnav">
+                        <li><a href="menu/menu.html">메뉴안내</a></li>
+                    </ul>
+                </li>
+                <li><a href="shop/nat.html" class="mainnav">매장안내</a>
+                    <ul class="subnav">
+                        <li><a href="shop/nat.html">전국가맹점</a></li>
+                        <li><a href="#shop.html" class="none">본점</a></li>
+                    </ul>
+                </li>
+                <li><a href="franchise/step.html" class="mainnav">창업안내</a>
+                <ul class="subnav">
+                        <li><a href="franchise/step.html">가맹절차</a></li>
+                        <li><a href="#fran" class="none">창업대출</a></li>
+                        <li><a href="#fran" class="none">창업경쟁</a></li>
+                        <li><a href="franchise/franchise.html">창업문의</a></li>
+                    </ul>
+                </li>
+                <li><a href="custom/notice.html" class="mainnav">고객광장</a>
+                <ul class="subnav">
+                        <li><a href="custom/notice.html">공지사항</a></li>
+                        <li><a href="#.html" class="none">고객의소리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="bwrap"></div>
+    </header>
+        <div class="mslider">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li class="ms01">
+                        <div class="mswrap">
+                            <h3>콩나물국밥 본고장 전주에서<br> 
+                                <span>1등 콩나물</span> 맛집은?
+                            </h3>
+                            <h4>현지 사정을 잘 알고 있는 현지인이 가장 선호하는 전주콩나물국밥브랜드</h4>
+                        </div>
+                    </li>
+                    <li class="ms02">
+                        <div class="mswrap">
+                            <h3>전주남부시장식<br>
+                                콩나물국밥에는<br> 
+                                <span>네가지 맛</span>이<br>
+                                담겨있습니다!
+                            </h3>
+                            <img src="img/main/mslider_02_img_01.png" alt="2번째 메인슬라이더 이미지">
+                            <div class="flav">
+                                <ul>
+                                    <li>
+                                        <img src="img/main/mslider_02_icon_01.png" alt="2번째 메인슬라이더 아이콘01">
+                                        <p>현대옥 기본육수
+                                            <span><br>(멸치, 다시마, 야채, 한우고기 등 수 가지 재료)</span>
+                                        </p><br>
+                                    </li>
+                                    <li>
+                                        <img src="img/main/mslider_02_icon_02.png" alt="2번째 메인슬라이더 아이콘02">
+                                        <p>오징어 우려낸 물
+                                            <span><br>(감칠맛, 시원한 맛)</span>
+                                        </p><br>
+                                    </li>
+                                    <li>
+                                        <img src="img/main/mslider_02_icon_03.png" alt="2번째 메인슬라이더 아이콘03">
+                                        <p>청양고추, 마늘, 파의 신선야채 다짐
+                                            <span><br>(천연 야채즙의 산뜻한 맛)</span>
+                                        </p><br>
+                                    </li>
+                                    <li>
+                                        <img src="img/main/mslider_02_icon_04.png" alt="2번째 메인슬라이더 아이콘04">
+                                        <p>콩나물 삶은 물
+                                            <span><br>(개운하고 달큰한 맛, 맑은 맛)</span>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li class="ms03">
+                        <div class="mswrap">
+                            <h3>첫 해외진출!<br> 
+                                <span>미국 LA 1호점 오픈</span>
+                            </h3>
+                            <h4>이제 LA교민들께서도 '유네스코 음식창의 도시 전주에서 온 현대옥콩나물국밥' 을 만나실 수 있게 되었습니다<br>
+                            현대옥이 교민들께 향수를 달래주면서 LA의 명소가 되도록 맛과 친절 위생에 최선을 다하고자 합니다</h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div><!--mslider-->
+        <div class="bWrap">
+            <div class="leftText">
+                <h2><img src="img/main/title_text_01.jpg" alt="타이틀 - 전주현대옥"></h2>
+                <h3>음식을 통하여 세상과 소통하는 식당 현대옥입니다</h3>
+                <p>현대옥 프랜차이즈의 본질은 가맹본사가 개발하고 전개하고 있는 시스템<br>
+즉, 상호 메뉴 맛에 가맹점주가 사후적으로 참여하여 가맹본사와<br>
+가맹점주 상호 이익을 추구하고 있는 동업 체제입니다.</p>
+                <a href="brand/intro.html">더보기 +</a>
+            </div>
+            <div class="rightCont">
+                    <img src="img/main/ceo_img.png" alt="대표사진" class="ceoImg">
+                <div class="mainManu">
+                    <img src="img/main/mainmanu.png" alt="대표메뉴">
+                    <img src="img/main/youtube_sum_img.jpg" alt="대표홍보영상" title="현대옥 홍보영상 - 클릭시 팝업창으로 영상을 보실 수 있습니다">
+                    
+                </div>
+            </div>
+        </div>
+        
+        <section>
+            <div class="menu">
+                <h2><img src="img/main/title_text_02.jpg" alt="타이틀 - 현대옥 메뉴"></h2>
+                <h3>
+                    현대옥에서는 고객에게 안전한 먹거리를 제공하기 위해 재료부터 엄선하여 만든<br>
+                    건강메뉴들을 중심으로 전연령층 모두를 만족시킬 특별한 메뉴들이 준비되어 있습니다.
+                </h3>       
+                <div class="menuContents">
+                    <div class="swiper-container"> 
+                        <div class="swiper-wrapper"> 
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="img/main/section_menu_img01.png" alt="전주남부시장식 콩나물국밥">
+                                </figure>
+                                <div class="textBox">
+                                    <h4>전주남부시장식 콩나물국밥</h4>
+                                    <p>끓이지 않고 부어 내는 방식<br>
+                                       뜨겁지 않은 적당한 국물<br> 
+                                       온도 계란은 수란으로 제공<br>
+                                       시원하고 개운한 맛</p>    
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="img/main/section_menu_img02.png" alt="끓이는식 콩나물국밥">
+                                </figure>
+                                <div class="textBox">
+                                    <h4>끓이는식 콩나물국밥</h4>
+                                    <p>뚝배기를 펄펄 끓이는 방식
+                                       뜨거운 국물 온도<br>
+                                       식어 가면서 구수하고 걸쭉한 맛<br>
+                                       계란은 뚝배기속에 넣어서 제공</p>    
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="img/main/section_menu_img03.png" alt="얼큰돼지국밥">
+                                </figure>
+                                <div class="textBox">
+                                    <h4>얼큰돼지국밥</h4>
+                                    <p>기름지고 얼큰하고 든든한 고기국밥</p>    
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="img/main/section_menu_img04.png" alt="목우촌 바베큐 삼겹살">
+                                </figure>
+                                <div class="textBox">
+                                    <h4>목우촌 바베큐 삼겹살</h4>
+                                    <p>국내산 농협 목우촌 제품</p>    
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="img/main/section_menu_img05.png" alt="궁중편육">
+                                </figure>
+                                <div class="textBox">
+                                    <h4>궁중편육</h4>
+                                    <p>국내산 본사에서 완제품 공급</p>    
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="img/main/section_menu_img06.png" alt="데친 큰오징어 한마리">
+                                </figure>
+                                <div class="textBox">
+                                    <h4>데친 큰오징어 한마리</h4>
+                                    <p>원산지 : 원양산</p>    
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="img/main/section_menu_img07.png" alt="현대옥 정찬">
+                                </figure>
+                                <div class="textBox">
+                                    <h4>현대옥 정찬</h4>
+                                    <p>전주남부시장식콩나물국밥 + 오징어사리 + 모주</p>    
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="img/main/section_menu_img08.png" alt="오징어사리">
+                                </figure>
+                                <div class="textBox">
+                                    <h4>오징어사리</h4>
+                                    <p>국밥과 수란에 넣어 먹음</p>    
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <figure>
+                                    <img src="img/main/section_menu_img09.png" alt="모">
+                                </figure>
+                                <div class="textBox">
+                                    <h4>모주</h4>
+                                    <p>막걸리에 여러 한방재료를 넣고 끓인 것으로서<br> 
+                                        알코올 성분을 증발시킨 보양 음료</p>    
+                                </div>
+                            </div> 
+
+                        </div> 
+
+                    </div>
+                    <div class="swiper-button-next"></div> 
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        <div class="cWrap">
+            <div class="franchise">
+                <div class="leftText">
+                    <h2>성공창업문의</h2>
+                    <h3><a href="tel:063-288-5577">063-288-5577</a></h3>
+                    <p class="text">
+                        평일 10:00 - 18:00<br>
+                        (점심시간 12:30 - 13:30)<br>
+                        토요일 10:00 - 13:00<br>
+                        일요일∙공휴일 휴무<br>
+                    </p>
+                </div>
+                <div class="btns">
+                    <a>창업경쟁력은?</a>
+                    <a href="franchise/franchise.html">창업 문의하기</a>
+                </div>
+            </div>
+            <div class="customer">
+                <h2>고객의 소리</h2>
+                <p class="text">
+                    현대옥을 이용하면서 느끼신 불편사항이나 바라는 점을 알려주세요.<br>
+                    고객님의 소중한 의견으로 한 뼘 더 자라는 현대옥이 되겠습니다. 
+                </p>
+                
+                <a>작성하기</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="fWrap">
+            <address>
+                전라북도 전주시 완산구 효자로 285, 3층 (중화산동2가 769-2) | 전화 : 063-228-5577 | 팩스 : 063-228-5530<br>
+                사업자등록번호 : 402-20-39975 대표자 : 오상현 E-mail : hyundaiok@hanmail.net 개인정보관리자 : 담당자 개인정보취급방침<br>
+                Copyrightⓒ 2019 <a href="http://www.hyundaiok.com/main" target="_blank" title="original site">현대옥.</a>All rights reserved.</address>
+            <h1><img src="img/common/flogo.png" alt="푸터로고이미지"></h1>
+        </div>
+    </footer>
+    <div class="mobilebtn">
+        <a href="http://mhyundaiok.dothome.co.kr">모바일 버전으로 보기</a>
+    </div>
+</body>
+</html>
