@@ -1,0 +1,22 @@
+/*notice*/
+.subcontent .notice{width: 1060px;border-top: 2px solid #c9b88f;padding-top: 30px;clear: both;}
+.subcontent .searchbox{float: right;margin-bottom: 10px;}
+.subcontent .searchbox select{width: 100px;height: 30px;border:1px solid #ccc}
+.subcontent .searchbox input[type="text"]{width: 250px;height: 28px;border:1px solid #ccc}
+.subcontent .searchbox input[type="button"]{width: 40px;height: 30px;border:1px solid #ccc;background-color: #fff;position: relative;top:11px;left:-6px;background-image: url(../img/sub/search_btn.png);}
+.subcontent #searchbtn{text-indent: -99em;position: relative;top:0px;}
+.notice .noticebox{border-bottom: 1px solid #ccc; margin-bottom: 10px;height: 155px;border-top: 1px solid #ccc;box-sizing: border-box;}
+.notice .noticebox:hover{background-color: #fafafa;}
+.notice figure img{width: 250px;height: 155px;float: left;clear:both;}
+.notice_right{float:right;width: 810px;height: 155px;position: relative;padding: 15px 10px;box-sizing: border-box;}
+.notice h5{float:left;font-size: 18px;font-weight: 600;width: 600px;margin-bottom: 20px;color:#777;overflow: hidden;text-overflow: ellipsis;white-space: nowrap}
+.notice p{height: 50px;float:left;width: 790px;line-height: 24px;margin-bottom: 30px;box-sizing: border-box;text-overflow: ellipsis;overflow: hidden;
+    display: -webkit-box;-webkit-line-clamp:2; 
+    -webkit-box-orient:vertical; 
+    word-wrap: break-word; 
+    text-align: justify; 
+
+}
+.notice span{display: block;position: absolute;left:10px;top:130px;color: #999;font-size: 14px;}
+/*----------------notice and---------------*/
+

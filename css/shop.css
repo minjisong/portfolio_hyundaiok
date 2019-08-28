@@ -1,0 +1,14 @@
+/*nat*/
+.subcontent .searchbox{float: right; margin-bottom: 10px;}
+.subcontent .searchbox select{width: 100px; height: 30px; border:1px solid #ccc}
+.subcontent .searchbox input[type="text"]{width: 250px; height: 28px; border:1px solid #ccc}
+.subcontent .searchbox input[type="button"]{width: 40px; height: 30px; border:1px solid #ccc; background-color: #fff; position: relative; top:11px; left:-6px; background-image: url(../img/sub/search_btn.png);}
+.subcontent #searchbtn{text-indent: -99em; position: relative; top:0px;}
+.subcontent .nat{width: 1060px; border-top: 2px solid #c9b88f; padding-top: 30px; clear: both; overflow: hidden; background-color: #fafafa;}
+.subcontent .nat .natbox{width: 300px; height: 360px; margin-right: 80px; float: left; background-color: #fff; margin-bottom: 60px;}
+.subcontent .nat .natbox.right{margin-right: 0px;}
+.subcontent .nat figure img{width: 300px; height: 200px;}
+.subcontent .nat .nat_right{width: 300px;}
+.subcontent .nat .natbox h5{font-size: 18px; font-weight: 600; text-align: center; margin: 20px;}
+.subcontent .nat .natbox p{font-size: 14px; text-align: center; line-height: 22px; padding: 0px 10px; height: 60px;}
+.subcontent .nat .natbox span{display: block; font-size: 14px; font-weight: 600; text-align: center; margin: 10px;}

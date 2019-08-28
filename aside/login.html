@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>로그인 페이지 | 현지인 1등 맛집! 전주현대옥</title>
+    <link rel="shortcut icon" href="img/common/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/common/favicon_ios.png">
+    <link rel="icon" sizes="192x192" type="text/css" href="img/common/favicon_and.png">
+    <link rel="stylesheet" href="../css/common.css">
+    <style>
+        form{width: 500px;height: 750px;padding: 60px 50px;box-sizing: border-box;}
+        form h3{font-size: 36px;text-align: center;margin-bottom: 60px;color:#938874}
+        form #loginid, #loginpw{width: 100%;height: 50px;padding-left: 10px;box-sizing: border-box;margin-bottom: 10px;border:1px solid #c9b88f;font-size: 14px;}
+        form .save{text-align: right;padding: 30px 0;}
+        form .save label{font-size: 14px;}
+        form #idsave{display: none;}
+        form label[for='idsave'] span{color:#938874}
+        form .chkbtnon{display: inline-block;border: 1px solid #c9b88f; width: 20px;height: 20px;border-radius: 20px;position: relative;top:6px;}
+        form .chkbtnon:after{content: '';display: inline-block;width: 20px;height: 20px;position: absolute;top:0;left:0;background-image: url(dot.png);background-size: 20px;transform: scale(0);transition: 0.1s ease-out;}
+        #idsave:checked + .chkbtnon:after{transform: scale(1)}
+        
+        form #loginbtn{width: 100%;height: 50px;border-radius: 25px;border:none;background-color: #c9b88f;color:#fff;font-size: 16px;letter-spacing: 2px;font-weight: 600}
+        form #loginbtn:hover{background-color: #938874}
+        form .loginfailbox{width: 100%;height: 50px;border:1px solid #c9b88f;margin: 40px 0;}
+        form .loginfailbox ul li{float:left;width: 33.33%;text-align: center;line-height: 50px;font-size: 16px;}
+        form .loginfailbox ul li a{color:#938874}
+        form .loginfailbox ul li a:hover{color:#c9b88f}
+        form .loginfailbox ul .center:after{content: '|';position: relative;left:26px;color: #c9b88f}
+        form .loginfailbox ul .center:before{content: '|';position: relative;right:22px;color: #c9b88f}
+        
+        form .snsloginbox > div{width: 100%;margin: 10px 0;position: relative;opacity: 0.8}
+        form .snsloginbox > div:hover{opacity: 1;}
+        form .snsloginbox > div img{width: 20px;position: absolute;top:15px;left:15px;}
+        form .snsloginbox > div{color:#fff;box-sizing: border-box;padding: 17px 60px}
+        form .snsloginbox .nlogin{width: 100%;height: 50px;background-color: #2db400}
+        form .snsloginbox .klogin{width: 100%;height: 50px;background-color: #f9c700}
+        form .snsloginbox .flogin{width: 100%;height: 50px;background-color: #3b5997}
+    </style>
+</head>
+<body>
+    <form action="#">
+        <h3>로그인</h3>
+        <input type="text" id="loginid" placeholder="아이디를 입력하세요">
+        <label for="loginid" class="away">아이디입력창</label>
+        <input type="password" id="loginpw" placeholder="비밀번호를 입력하세요 (영문대소문자 6~12자리)" maxlength="12">
+        <label for="loginpw" class="away">비밀번호입력창</label>
+        <div class="save">
+            <label for="idsave">
+                <input type="checkbox" id="idsave">
+                <i class="chkbtnon"></i>
+                <span>아이디 저장</span>
+            </label>
+        </div>
+        <input type="submit" id="loginbtn" value="로그인">
+        <label for="loginbtn" class="away">로그인 버튼</label>
+        
+        <div class="loginfailbox">
+            <ul>
+                <li><a href="#">아이디 찾기</a></li>
+                <li><a href="#" class="center">비밀번호 찾기</a></li>
+                <li><a href="join.html">회원가입</a></li>
+            </ul>
+        </div>
+        <div class="snsloginbox">
+            <div class="nlogin">
+                <img src="../img/common/naver_icon.png" alt="네이버 계정으로 로그인">
+                네이버 계정으로 로그인
+            </div>
+            <div class="klogin">
+                <img src="../img/common/kakao_icon.png" alt="카카오 계정으로 로그인">
+                카카오 계정으로 로그인
+            </div>
+            <div class="flogin">
+                <img src="../img/common/facebook_icon.png" alt="페이스북 계정으로 로그인">
+                페이스북 계정으로 로그인
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+/*
+|---------------------------------------------------------t-----------------
+| UItoTop jQuery Plugin 1.2
+| http://www.mattvarone.com/web-design/uitotop-jquery-plugin/
+|--------------------------------------------------------------------------
+*/
+
+#toTop {
+/*	display:none;
+	text-decoration:none;*/
+	position:fixed;
+	top:625px;
+	right:3%;
+    z-index: 99;
+	overflow:hidden;
+	width:80px;
+	height:30px;
+	border:none;
+	text-indent:-99999em;
+	background:url(../img/common/gotop_btn.gif) no-repeat left top;
+}
+
+#toTop:active, #toTop:focus {
+	outline:none;
+}

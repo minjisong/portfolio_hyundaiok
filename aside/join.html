@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>회원가입 페이지 | 현지인 1등 맛집! 전주현대옥</title>
+    <link rel="shortcut icon" href="img/common/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/common/favicon_ios.png">
+    <link rel="icon" sizes="192x192" type="text/css" href="img/common/favicon_and.png">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
+    <style>
+        html{overflow-x: hidden;}
+        form{width: 500px;height: auto;padding: 60px 50px;box-sizing: border-box;}
+        form h3{font-size: 36px;text-align: center;margin-bottom: 60px;color:#938874}
+        form textarea{width: 100%;height: 100px;margin-bottom: 4px;resize: none;}
+        form #service, #privacy{display: none;}   
+        form label[for='service'] span{color:#938874;}
+        form label[for='privacy'] span{color:#938874;}
+        form .chkbtnon{display: inline-block;border: 1px solid #c9b88f; width: 20px;height: 20px;border-radius: 20px;position: relative;top:6px;}
+        form .chkbtnon:after{content: '';display: inline-block;width: 20px;height: 20px;position: absolute;top:0;left:0;background-image: url(dot.png);background-size: 20px;transform: scale(0);transition: 0.1s ease-out;}
+        #privacy:checked + .chkbtnon:after{transform: scale(1)}
+        #service:checked + .chkbtnon:after{transform: scale(1)}
+        
+        form hr{margin-bottom: 30px;}
+        
+        form label.lname{font-weight: 600;color: #999;font-size: 14px;margin-top: 15px;display: block;}
+        form input[type="text"]{width: 100%; height: 40px;margin: 5px 0;} 
+        form input[type="password"]{width: 100%;height: 40px;margin: 5px 0} 
+        
+        form #joinbtn{width: 100%;height: 50px;border-radius: 25px;border:none;background-color: #c9b88f;color:#fff;font-size: 16px;letter-spacing: 2px;font-weight: 600;margin: 30px 0}
+        form #joinbtn:hover{background-color: #938874;}
+        
+        form select{width: 25%;height: 40px;margin-top: 5px;}
+        form select + label{margin-right: 2%;}
+        form h4.selectTitle{font-weight: 600;color: #999;font-size: 14px;margin-top: 15px;display: block;}
+        form input[type="email"]{width: 100%;height: 40px;margin: 5px 0;}
+        
+        form .postbox{width: 100%;}
+        form .postbox > *{box-sizing: border-box;}
+        form #sample2_postcode{width: 50%;float: left;border:1px solid #ddd;}
+        form input[type="button"]{width: 50%;border: none;height: 40px;margin-top:5px;}
+        form #sample2_detailAddress{width: 50%;float: left;}
+        form #sample2_extraAddress{width: 50%;background-color: #a9a9a9;border:none;}
+    </style>
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <script src="../js/birth.js"></script>
+    
+</head>
+<body>
+    <form action="#">
+        <h3>회원가입</h3>
+        <textarea id="textarea1">           
+여러분을 환영합니다.
+
+현대옥 서비스 및 제품(이하 ‘서비스’)을 이용해 주셔서 감사합니다. 본 약관은 다양한 현대옥 서비스의 이용과 관련하여 서비스를 제공하는 네이버 주식회사(이하 ‘네이버’)와 이를 이용하는 네이버 서비스 회원(이하 ‘회원’) 또는 비회원과의 관계를 설명하며, 아울러 여러분의 네이버 서비스 이용에 도움이 될 수 있는 유익한 정보를 포함하고 있습니다. 
+            네이버 서비스를 이용하시거나 네이버 서비스 회원으로 가입하실 경우 여러분은 본 약관 및 관련 운영 정책을 확인하거나 동의하게 되므로, 잠시 시간을 내시어 주의 깊게 살펴봐 주시기 바랍니다. 
+
+            다양한 네이버 서비스를 즐겨보세요.
+
+            네이버는 www.naver.com을 비롯한 네이버 도메인의 웹사이트 및 응용프로그램(어플리케이션, 앱)을 통해 정보 검색, 다른 이용자와의 커뮤니케이션, 콘텐츠 제공, 상품 쇼핑 등 여러분의 생활에 편리함을 더할 수 있는 다양한 서비스를 제공하고 있습니다.
+            여러분은 PC, 휴대폰 등 인터넷 이용이 가능한 각종 단말기를 통해 각양각색의 네이버 서비스를 자유롭게 이용하실 수 있으며, 개별 서비스들의 구체적인 내용은 각 서비스 상의 안내, 공지사항, 네이버 웹고객센터(이하 ‘고객센터’) 도움말 등에서 쉽게 확인하실 수 있습니다. 
+        </textarea>
+        <label for="textarea1" class="away">현대옥 이용약관 동의</label>
+        <label for="service">
+            <input type="checkbox" id="service">
+            <i class="chkbtnon"></i>
+            <span>현대옥 이용약관 동의</span>
+        </label>
+        <br><br>
+        <textarea id="textarea2">
+정보통신망법 규정에 따라 현대옥에 회원가입 신청하시는 분께 수집하는 개인정보의 항목, 개인정보의 수집 및 이용목적, 개인정보의 보유 및 이용기간을 안내 드리오니 자세히 읽은 후 동의하여 주시기 바랍니다.
+
+            1. 수집하는 개인정보
+
+            이용자는 회원가입을 하지 않아도 정보 검색, 뉴스 보기 등 대부분의 네이버 서비스를 회원과 동일하게 이용할 수 있습니다. 이용자가 메일, 캘린더, 카페, 블로그 등과 같이 개인화 혹은 회원제 서비스를 이용하기 위해 회원가입을 할 경우, 네이버는 서비스 이용을 위해 필요한 최소한의 개인정보를 수집합니다.
+
+            회원가입 시점에 네이버가 이용자로부터 수집하는 개인정보는 아래와 같습니다.
+            - 회원 가입 시에 ‘아이디, 비밀번호, 이름, 생년월일, 성별, 가입인증 휴대전화번호’를 필수항목으로 수집합니다. 만약 이용자가 입력하는 생년월일이 만14세 미만 아동일 경우에는 법정대리인 정보(법정대리인의 이름, 생년월일, 성별, 중복가입확인정보(DI), 휴대전화번호)를 추가로 수집합니다. 그리고 선택항목으로 이메일 주소를 수집합니다.
+        </textarea>
+        <label for="textarea2" class="away">개인정보동의</label>
+        <label for="privacy">
+            <input type="checkbox" id="privacy">
+            <i class="chkbtnon"></i>
+            <span>개인정보 수집 및 이용에 대한 안내</span>
+        </label>
+        <br><br><br><hr>
+        
+        <label for="joinid" class="lname">아이디</label> 
+        <input type="text" id="joinid" placeholder="영문 소문자 / 숫자" maxlength="12">
+        
+        <label for="joinpw" class="lname">비밀번호 입력창</label>
+        <input type="password" id="joinpw" placeholder="비밀번호 입력 (숫자, 영문 조합 6자리 이상)" maxlength="12">
+        
+        <label for="joinpwchk" class="lname">비밀번호 확인 입력창</label>
+        <input type="password" id="joinpwchk" placeholder="비밀번호 확인" maxlength="12">
+        
+        <label for="name" class="lname">성함</label>
+        <input type="text" id="name" placeholder="성함" maxlength="5">
+        
+        <label for="email" class="lname">이메일</label>
+        <input type="email" placeholder="hyundaiok@naver.com" id="email">
+        
+        <h4 class="selectTitle">
+            생년월일
+            </h4>
+        <select id="birthYear"></select>
+        <label for="birthYear">년</label>
+        <select id="birthMonth"></select>
+        <label for="birthMonth">월</label>
+        <select id="birthDate"></select>
+        <label for="birthDate">일</label>        
+        
+        <div class="postbox">
+            <h4 class="selectTitle">
+                우편번호 찾기
+            </h4>  
+            <input type="text" id="sample2_postcode" placeholder=" 우편번호" disabled>
+            <label for="sample2_postcode" class="away">우편번호입력</label>
+            <input type="button" onclick="sample2_execDaumPostcode()" value=" 우편번호 찾기" id="sample2"><br>
+            <label for="sample2" class="away">우편번호 찾기 버튼</label>
+            <input type="text" id="sample2_address" placeholder=" 주소"><br>
+            <label for="sample2_address" class="away">주소입력상자</label>
+            <input type="text" id="sample2_detailAddress" placeholder=" 상세주소 (ex.201호)">
+            <label for="sample2_detailAddress" class="away">상세주소입력상자</label>
+            <input type="text" id="sample2_extraAddress" placeholder=" (00동)" disabled>
+            <label for="sample2_extraAddress" class="away">해당하는 동네이름상자</label>
+            <div id="layer" style="display:none;position:fixed;overflow:hidden;z-index:1;-webkit-overflow-scrolling:touch;">
+                <img src="//t1.daumcdn.net/postcode/resource/images/close.png" id="btnCloseLayer" style="cursor:pointer;position:absolute;right:-3px;top:-3px;z-index:1" onclick="closeDaumPostcode()" alt="닫기 버튼"> 
+            </div>
+            <script src="../js/post.js"></script>
+        </div>
+        <input type="submit" id="joinbtn" value="회원가입">
+        <label for="joinbtn" class="away">회원가입 버튼</label>
+    </form>
+</body>
+</html>

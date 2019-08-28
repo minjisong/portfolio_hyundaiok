@@ -1,0 +1,59 @@
+/*font*/
+@font-face { font-family: 'Eoe_Zno_L'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/Eoe_Zno_L.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'EastSeaDokdo-Regular'; src: url('../font/EastSeaDokdo-Regular.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+/*reset*/
+*{padding:0;margin:0;color:#555;font-family: 'Eoe_Zno_L';}
+*::selection{background-color: #c9b88f;color:#333}
+fieldset,img{border:0 none;display: block;}
+table{border-collapse: collapse; border-spacing: 0px;}address{font-style: normal;}
+dl,ul,ol,menu,li{list-style:none}
+a{color:#555;text-decoration:none}
+legend{position:absolute;left:-999em;}
+label.away{position: absolute;left:-999em;}
+input[type=button],input[type=reset],input[type=submit],input[type=image],button{cursor: pointer}
+.none{cursor: inherit;}
+h1,h2,h3,h4,h5,h6{font-weight: normal}
+button{font-weight: bold}
+
+/*layout*/
+header{width:100%; min-width: 1060px; height: 200px; margin: 0 auto; box-sizing: border-box; position: relative;}
+
+footer{width:100%; min-width: 1060px; height: 150px; background-color: #555; padding: 45px 15px; box-sizing: border-box;}
+
+/*aside*/
+.bean{position: fixed; top:400px; right: 3%; z-index: 2}
+.quick{width: 80px; height:125px; border:1px solid #555; box-sizing: border-box; position:fixed; top:500px; right:3%; z-index: 3; background-color: #fff; }
+
+
+
+/*header gnb*/
+header h1{width: 140px; margin: 0 auto}
+header img{width:140px; }
+.gnb{width:1060px; height: 60px; margin: 0 auto;}
+.gnb>ul>li{float: left; }
+.gnb>ul>li>a{line-height: 58px;}
+.mainnav{width: 212px; height: 60px; float: left; box-sizing: border-box; text-align: center; line-height: 50px; font-size: 18px; font-weight: bold;}
+.subnav{width: 212px; height: 150px; text-align: center; line-height: 32px; font-size: 14px; position: absolute; top:200px; z-index: 1001; }
+.subnav>li:nth-child(1){padding-top: 10px}
+.subnav a:hover{text-decoration: underline; font-weight: 600;}
+.subbg{width: 100%; min-width: 1060px; height: 130px; background-color:#f8f8f8; position: absolute; top:200px; left: 0; z-index: 1000; padding: 10px 0;}/*제이쿼리 동적생성css*/
+
+/*제이쿼리스타일*/
+.bwrap.on{background-color: rgba(0,0,0,0.7);width: 100%; min-width: 1060px; position: absolute; left:0; top:200px; z-index: 101; -webkit-transition: 0.7s; -o-transition: 0.7s; transition: 0.7s; z-index: 110; min-height: 2000px;}
+
+/*footer*/
+
+.fWrap{width:1060px; height: 100%; margin: 0 auto;}
+.fWrap address{font-size: 12px; line-height: 20px; float: left; color:#ccc; }
+.fWrap h1{float: right; padding-right: 15px;}
+.fWrap address a{font-weight: 900; color:#938874;}
+.mobilebtn > a{width:100%; min-width: 1060px; display: block; text-align: center; padding-top: 20px; height: 40px; color:#fff; background-color: #333; font-size: 20px;}
+
+/*퀵메뉴*/
+
+.quick ul li{width:100%; height:30px; text-align: center; border-bottom: 1px solid #555;}
+.quick ul li a{font-size: 12px; line-height: 29px;}
+.quick ul li:nth-child(5){background-color: #555; border-bottom: 0;}
+.quick ul li .last{color:#fff;}

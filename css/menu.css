@@ -1,0 +1,14 @@
+/*menu*/
+
+.menu_content{width: 340px; height: 300px; border:1px solid #ccc; float: left; margin-right: 20px; box-sizing: border-box; overflow: hidden; margin-bottom: 30px;}
+.menu_content figure img{width: 340px;}
+.menu_content.m01 figure:before{content: ''; width: 80px; height: 40px; background-image: url(../img/sub/menu_get_01.png);position: absolute; z-index: 10;}
+.menu_content.m02 figure:before{content: ''; width: 80px; height: 40px; background-image: url(../img/sub/menu_get_02.png);position: absolute; z-index: 10;}
+.menu_content.m03 figure:before{width: 80px; height: 40px; content: ''; background-image: url(../img/sub/menu_get_03.png);position: absolute; z-index: 10;}
+.menu_content.right{margin-right: 0px;}
+.menu_content .menu_text h5{margin: 10px; font-size: 18px; font-weight: 600;}
+.menu_content .menu_text p{margin: 5px 10px; font-size: 14px;}
+.menu_content .menu_text span{margin: 10px; font-weight: 600; font-size: 18px; color:#938874;}
+.sub_menu_notice{width: 1060px; height: 100px; margin: 0 auto; border:1px solid #ccc; box-sizing: border-box; text-align: center; padding: 30px; line-height: 22px; margin-bottom: 50px;}
+/*----------------menu and---------------*/
+
